@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ripal</title>
+    <link rel="stylesheet" href="ini.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="surat">
+            <img src="satu.png" alt="satu" width="300" style="z-index:3;margin-top: 87px;">
+            <div class="kotaksurat">
+                <div class="mata">
+                    <img src="mata.png" alt="mata" width="150">
+                </div>
+                <div class="mulut">
+                    <div class="isi-mulut"></div>
+                </div>
+            </div>
+            <img src="dua.png" alt="satu" width="300" style="z-index:1;">
+        </div>
+        <div class="judul">
+            <div class="judul-awal">
+                Do you want to unsubscribe?
+            </div>
+            <div class="judul-cancel">
+                Thanks for staying with us!
+            </div>
+            <div class="judul-unsubs">
+                We are sad to see you go!
+            </div>
+        </div>
+        <div class="subjudul">if you unsubscribe, you will stop receiving our weekly newsletter</div>
+        <div class="button">
+            <div class="button-awal">
+                <div class="unsubscribe">
+                    <button class="btn btn-unsubscribe">Unsubscribe</button>
+                </div>
+                <div class="cancel">
+                    <button class="btn btn-cancel">Cancel</button>
+                </div>                
+            </div>
+            <div class="goback">
+                <button class="btn btn-unsubscribe">Goback</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(function() {
+          $('.unsubscribe').hover(function() {
+            $('.kotaksurat').css('margin-top', '70px');
+            $('.mata').css('margin-top', '-70px');
+                $('.isi-mulut').css('background-image','url("cemberut-2.png")');
+                 $('.isi-mulut').css('margin-top','180px');
+          }, function() {
+            // on mouseout, reset the background colour
+            $('.kotaksurat').css('margin-top', '50px');
+            $('.mata').css('margin-top', '-90px');
+             $('.isi-mulut').css('background-image','url("cemberut-1.png")');
+             $('.isi-mulut').css('margin-top','200px');
+          });
+        });
+
+        $(".cancel").click(function() {
+            $('.judul-awal').css('display','none');
+            $('.judul-cancel').css('display','block');
+            $('.button-awal').css('display','none');
+            $('.goback').css('display','block');
+        });
+        $(".goback").click(function() {
+            $('.judul-awal').css('display','block');
+            $('.judul-cancel').css('display','none');
+            $('.judul-unsubs').css('display','none');
+            $('.button-awal').css('display','block');
+            $('.goback').css('display','none');
+        });
+        $(".unsubscribe").click(function() {
+            $('.judul-awal').css('display','none');
+            $('.judul-unsubs').css('display','block');
+            $('.button-awal').css('display','none');
+            $('.goback').css('display','block');
+        });
+    </script>
+</body>
+</html>

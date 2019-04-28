@@ -1,0 +1,119 @@
+body {
+    background-color: red;
+    background-image: linear-gradient(45deg, #642B73, #C6426E);
+    height: 91vh;
+}
+
+.kotaksurat {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border: 5px solid #472778;
+    margin-left: 120px; 
+    margin-top: 50px;
+    z-index: 2;
+    border-radius: 25px;
+    position: absolute;
+    transition: margin-top 0.3s;
+}
+
+.mata {
+    margin-left: -50px;
+    margin-top: -90px;
+    transition: margin-top 0.3s;
+}
+
+.isi-mulut {
+    width: 50px;
+    height: 20px;
+    margin-top: 200px;
+    margin-left: 97px;
+    transition: margin-top 0.3s;
+    background-image: url('cemberut-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 6px;
+    margin: 50px auto;
+}
+
+.judul {
+    padding-top: 350px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.subjudul{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: lighter;
+}
+.button {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 270px;
+}
+
+.surat img{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 4px 10px;
+    float: left;
+}
+
+.btn-unsubscribe {
+    background-color: #d056a7;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #eadce9;
+    color: #584a57;
+}
+
+.btn:hover ~ .btn-cancel{
+    background-color: red;
+}
+
+.a:hover ~ .kotaksurat {
+    margin-top: 100px;
+}
+
+.goback{
+    background-color: #d056a7;
+    color: white;
+    margin-left: 90px;
+    display: none;
+}
+
+.button-awal{
+    display: block;
+}
+
+.judul-cancel {
+    display: none;
+}
+
+.judul-awal{
+    display: block;
+}
+
+.judul-unsubs{
+    display: block;
+}
